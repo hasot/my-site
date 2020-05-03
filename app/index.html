@@ -11,21 +11,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="shortcut icon" href="assets/css/images/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
 	<body class="is-preload">
 		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
+            <div class="hero hero--wrap">
+                <div id="fss-container" class="fss-container">
+                </div>
+            </div>
 			<div id="main">
-
 				<!-- Header -->
 					<header id="header">
 						<h1>Dmitry Yunkov</h1>
 						<p>Frontend developer<br> The next time you think you're perfect, try walking on water.</p>
 						<nav>
 							<ul>
-								<li><a href="./cv.pdf" class="icon fa-info"><span class="label">Info</span></a></li>
+								<li><a href="../profile.pdf" class="icon fa-info"><span class="label">Info</span></a></li>
 								<li><a href="https://twitter.com/hasot" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="https://www.linkedin.com/in/dmitry-yunkov-a2a97683/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
 								<li><a href="https://www.instagram.com/younkov" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
@@ -33,19 +34,15 @@
 							</ul>
 						</nav>
 					</header>
-
 				<!-- Footer -->
 					<footer id="footer">
 						<span class="copyright">&copy; By Dmitry Yunkov</span>
 					</footer>
-
 			</div>
 		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-		
 	</body>
+    <script src="assets/js/canvasBackground.js" ></script>
+    <script>
+        window.onload = function() { document.body.classList.remove('is-preload'); }
+    </script>
 </html>
