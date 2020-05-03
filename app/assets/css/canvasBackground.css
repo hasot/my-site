@@ -1,6 +1,6 @@
 html, body {
     min-width: 1024px;
-    width: 100%;
+    width: 300%;
     min-height: 768px;
     height: 100%;
     margin: 0;
@@ -19,5 +19,5 @@ html, body {
     position: absolute;
     top: 0;
     min-width: 1024px;
-    width: 100%;
+    width: 300%;
 }
