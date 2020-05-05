@@ -35,10 +35,10 @@
 					</footer>
 			</div>
 		</div>
+        <script src="assets/js/canvasBackground.js?rnd=23" defer></script>
+        <script defer>
+            window.onload = function() { document.body.classList.remove('is-preload'); }
+            window.ontouchmove = function() { return false; }
+        </script>
 	</body>
-    <script src="assets/js/canvasBackground.js?rnd=23"></script>
-    <script>
-        window.onload = function() { document.body.classList.remove('is-preload'); }
-        window.ontouchmove = function() { return false; }
-    </script>
 </html>
