@@ -21,11 +21,9 @@
 						<p>Frontend developer<br> The next time you think you're perfect, try walking on water.</p>
 						<nav>
 							<ul>
-								<li><a href="profile.pdf" class="icon fa-info"><span class="label">Info</span></a></li>
-								<li><a href="https://twitter.com/hasot" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://twitter.com/yunkovv" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="https://www.linkedin.com/in/dmitry-yunkov-a2a97683/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
 								<li><a href="https://www.instagram.com/yunkovv" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://github.com/hasot" class="icon fa-github"><span class="label">Github</span></a></li>
 							</ul>
 						</nav>
 					</header>
@@ -40,5 +38,23 @@
             window.onload = function() { document.body.classList.remove('is-preload'); }
             window.ontouchmove = function() { return false; }
         </script>
+		<script type="module">
+			import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+			import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+			const firebaseConfig = {
+				apiKey: "AIzaSyDe8ltPAFJmnze2GT8LEMCX8f4eStiG2zo",
+				authDomain: "my-site-b1200.firebaseapp.com",
+				databaseURL: "https://my-site-b1200.firebaseio.com",
+				projectId: "my-site-b1200",
+				storageBucket: "my-site-b1200.appspot.com",
+				messagingSenderId: "925955133776",
+				appId: "1:925955133776:web:d4616df1d4261794ce5c55",
+				measurementId: "G-4NW5X5YCQ5"
+			};
+
+			// Initialize Firebase
+			const app = initializeApp(firebaseConfig);
+			const analytics = getAnalytics(app);
+		</script>
 	</body>
 </html>
